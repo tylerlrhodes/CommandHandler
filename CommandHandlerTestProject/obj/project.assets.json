@@ -7111,10 +7111,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\tyler rhodes\\documents\\visual studio 2017\\Projects\\CommandHandlerTestProject\\CommandHandlerTestProject\\CommandHandlerTestProject.csproj",
+      "projectUniqueName": "C:\\Users\\Tyler Rhodes\\Source\\Repos\\CommandHandler\\CommandHandlerTestProject\\CommandHandlerTestProject.csproj",
       "projectName": "CommandHandlerTestProject",
-      "projectPath": "c:\\users\\tyler rhodes\\documents\\visual studio 2017\\Projects\\CommandHandlerTestProject\\CommandHandlerTestProject\\CommandHandlerTestProject.csproj",
-      "outputPath": "c:\\users\\tyler rhodes\\documents\\visual studio 2017\\Projects\\CommandHandlerTestProject\\CommandHandlerTestProject\\obj\\",
+      "projectPath": "C:\\Users\\Tyler Rhodes\\Source\\Repos\\CommandHandler\\CommandHandlerTestProject\\CommandHandlerTestProject.csproj",
+      "outputPath": "C:\\Users\\Tyler Rhodes\\Source\\Repos\\CommandHandler\\CommandHandlerTestProject\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

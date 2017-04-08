@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using SimpleInjector;
 using System.Reflection;
 
+// Simple Command Hanlder Test Project
+
 namespace CommandHandlerTestProject
 {
   class CommandResult<TCommand>
