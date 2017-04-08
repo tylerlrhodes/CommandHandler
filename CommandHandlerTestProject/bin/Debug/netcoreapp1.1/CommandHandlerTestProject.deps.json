@@ -1,0 +1,38 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.1",
+    "signature": "d34bf9dd55196a08a3f195ba7db067205777492c"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.1": {
+      "commandhandlertestproject/1.0.0": {
+        "dependencies": {
+          "SimpleInjector": "4.0.0"
+        },
+        "runtime": {
+          "CommandHandlerTestProject.dll": {}
+        }
+      },
+      "simpleinjector/4.0.0": {
+        "runtime": {
+          "lib/netstandard1.3/SimpleInjector.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "commandhandlertestproject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "simpleinjector/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mHMeyQdsCeFAA6hwFmfzY/OBpdj8aX1ovFsjE7E4f6brDo/qjd9gECTY884AC8Ap/JoXzCQ+Pm7fxf2pzBWMuA==",
+      "path": "simpleinjector/4.0.0",
+      "hashPath": "simpleinjector.4.0.0.nupkg.sha512"
+    }
+  }
+}
