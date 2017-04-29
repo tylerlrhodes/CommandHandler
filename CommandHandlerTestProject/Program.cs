@@ -25,6 +25,12 @@ namespace CommandHandlerTestProject
     Task<CommandResult<TCommand>> ExecuteAsync(TCommand command);
   }
 
+  class StoopidCommand
+  {
+    public int Id { get; set; }
+    public string Name { get; set; }
+  }
+
   class DummyCommand
   {
     public int Id { get; set; }
@@ -68,6 +74,19 @@ namespace CommandHandlerTestProject
     }
   }
 
+  class StoopidCommandHandler : ICommandHandlerAsync<StoopidCommand>
+  {
+    public async Task<CommandResult<StoopidCommand>> ExecuteAsync(StoopidCommand command)
+    {
+      await Task.Delay(2000);
+
+      command.Id = 10;
+      command.Name = "Stoopid test";
+
+      return new CommandResult<StoopidCommand>(command, true);
+    }
+  }
+
   class Program
   {
     static void Main(string[] args)
@@ -94,6 +113,17 @@ namespace CommandHandlerTestProject
       var result = await cp.ProcessAsync(command);
 
       Console.WriteLine($"{result.Command.Id}");
+
+      var command2 = new StoopidCommand()
+      {
+        Id = 10,
+        Name = "Stoopid"
+      };
+
+      var result2 = await cp.ProcessAsync(command2);
+
+      Console.WriteLine($"{result2.Command.Id}");
+
     }
   }
 
